@@ -1,0 +1,10 @@
+{
+  "profiles": {
+	"DevUpUnoDemo.Windows (Package)": {
+	  "commandName": "MsixPackage"
+	},
+	"DevUpUnoDemo.Windows (Unpackaged)": {
+	  "commandName": "Project"
+	}
+  }
+}

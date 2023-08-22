@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "DevUpUnoDemo",
+  "display": "standalone",
+  "name": "DevUpUnoDemo",
+  "short_name": "DevUpUnoDemo",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
