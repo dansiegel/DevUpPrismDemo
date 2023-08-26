@@ -1,24 +1,27 @@
 <Project ToolsVersion="15.0">
+  <PropertyGroup>
+    <PrismVersion>9.0.219-pre-g331d34b24b</PrismVersion>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Prism.Core" Version="9.0.208-pre-g952e343f58" />
-    <PackageVersion Include="Prism.DryIoc.Uno.WinUI" Version="9.0.208-pre-g952e343f5" />
-    <PackageVersion Include="Prism.Uno.WinUI" Version="9.0.208-pre-g952e343f5" />
-    <PackageVersion Include="Prism.DryIoc" Version="9.0.208-pre-g952e343f5" />
-    <PackageVersion Include="Prism.DryIoc.Maui" Version="9.0.208-pre-g952e343f5" />
+    <PackageVersion Include="Prism.Core" Version="$(PrismVersion)" />
+    <PackageVersion Include="Prism.DryIoc.Uno.WinUI" Version="$(PrismVersion)" />
+    <PackageVersion Include="Prism.Uno.WinUI" Version="$(PrismVersion)" />
+    <PackageVersion Include="Prism.DryIoc" Version="$(PrismVersion)" />
+    <PackageVersion Include="Prism.DryIoc.Maui" Version="$(PrismVersion)" />
     <PackageVersion Include="coverlet.collector" Version="3.2.0" />
     <PackageVersion Include="FluentAssertions" Version="6.10.0" />
-    <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="8.0.0-preview.7.23375.6" />
     <PackageVersion Include="Microsoft.Net.Compilers.Toolset" Version="4.2.0" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
-    <PackageVersion Include="Microsoft.Windows.Compatibility" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.7.1" />
+    <PackageVersion Include="Microsoft.Windows.Compatibility" Version="8.0.0-preview.7.23376.1" />
     <PackageVersion Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
     <PackageVersion Include="Microsoft.WindowsAppSDK" Version="1.2.230217.4" />
     <PackageVersion Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageVersion Include="NUnit" Version="3.13.3" />
     <PackageVersion Include="NUnit3TestAdapter" Version="4.4.2" />
     <PackageVersion Include="Serilog.AspNetCore" Version="6.1.0" />
-    <PackageVersion Include="SkiaSharp.Skottie" Version="2.88.3" />
-    <PackageVersion Include="SkiaSharp.Views.Uno.WinUI" Version="2.88.3" />
+    <PackageVersion Include="SkiaSharp.Skottie" Version="2.88.5" />
+    <PackageVersion Include="SkiaSharp.Views.Uno.WinUI" Version="2.88.5" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageVersion Include="Uno.Core.Extensions.Logging.Singleton" Version="4.0.1" />
     <PackageVersion Include="Uno.Extensions.Configuration" Version="2.4.2" />
@@ -42,7 +45,7 @@
     <PackageVersion Include="Uno.Material.WinUI" Version="2.6.1" />
     <PackageVersion Include="Uno.Toolkit.WinUI" Version="3.0.5" />
     <PackageVersion Include="Uno.Toolkit.WinUI.Material" Version="3.0.5" />
-    <PackageVersion Include="Uno.Resizetizer" Version="0.42.0-dev.174" />
+    <PackageVersion Include="Uno.Resizetizer" Version="1.1.2" />
     <PackageVersion Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.9.45" />
     <PackageVersion Include="Uno.UITest.Helpers" Version="1.1.0-dev.32" />
     <PackageVersion Include="Uno.UniversalImageLoader" Version="1.9.36" />
@@ -59,6 +62,8 @@
     <PackageVersion Include="Xamarin.UITest" Version="4.1.1" />
     <PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
     <PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
-    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0-preview.7.23364.3" />
+    <PackageVerions Include="Microsoft.Extensions.Configuration" Version="8.0.0-preview.7.23375.6" />
+    <PackageVerions Include="Microsoft.Extensions.Logging" Version="8.0.0-preview.7.23375.6" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0-preview.7.23375.6" />
   </ItemGroup>
 </Project>

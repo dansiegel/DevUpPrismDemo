@@ -1,19 +1,32 @@
-﻿using Prism.Commands;
-using Prism.Dialogs;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 
 namespace DevUpDemo.ViewModels;
 
 public class ViewAViewModel : BindableBase, IRegionAware
 {
-    private IRegionNavigationService? _navigation;
+    private IRegionManager _regionManager { get; }
     private IDialogService _dialogService { get; }
 
-    public ViewAViewModel(IDialogService dialogService)
+    public ViewAViewModel(IDialogService dialogService, IRegionManager regionManager)
     {
         _dialogService = dialogService;
-        Navigate = new DelegateCommand(() => _navigation?.RequestNavigate("ViewB"));
+        _regionManager = regionManager;
+        Navigate = new DelegateCommand(OnNavigate);
         ShowDialog = new AsyncDelegateCommand(OnShowDialog);
+    }
+
+    private int count;
+    private void OnNavigate()
+    {
+        var parameters = new NavigationParameters
+        {
+            { "message", count++ switch
+            {
+                0 => "Hello from View A",
+                _ => $"Hello from View A ({count})!"
+            } }
+        };
+        _regionManager.RequestNavigate("ContentRegion", "ViewB", parameters);
     }
 
     public bool IsNavigationTarget(NavigationContext navigationContext) =>
@@ -39,8 +52,6 @@ public class ViewAViewModel : BindableBase, IRegionAware
 
     public void OnNavigatedTo(NavigationContext navigationContext)
     {
-        _navigation = navigationContext.NavigationService;
-
         if (navigationContext.Parameters.TryGetValue<string>("message", out var message))
             Message = message;
     }

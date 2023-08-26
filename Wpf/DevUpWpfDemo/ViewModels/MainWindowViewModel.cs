@@ -1,6 +1,4 @@
-﻿using Prism.Mvvm;
-
-namespace DevUpWpfDemo.ViewModels
+﻿namespace DevUpWpfDemo.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {

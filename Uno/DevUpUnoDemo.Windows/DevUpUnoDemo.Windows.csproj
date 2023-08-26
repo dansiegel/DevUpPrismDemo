@@ -44,7 +44,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DevUpUnoDemo\DevUpUnoDemo.csproj" />
-    <ProjectReference Include="..\DevUpUnoDemo.DataContracts\DevUpUnoDemo.DataContracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>

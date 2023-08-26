@@ -74,7 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DevUpUnoDemo\DevUpUnoDemo.csproj" />
-    <ProjectReference Include="..\DevUpUnoDemo.DataContracts\DevUpUnoDemo.DataContracts.csproj" />
   </ItemGroup>
   <Import Project="..\DevUpUnoDemo.Base\base.props" />
 </Project>

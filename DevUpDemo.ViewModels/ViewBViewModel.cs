@@ -1,6 +1,4 @@
 using System.Windows.Input;
-using Prism.Commands;
-using Prism.Dialogs;
 
 namespace DevUpDemo.ViewModels;
 
@@ -12,7 +10,7 @@ public class ViewBViewModel : BindableBase, IRegionAware
     public ViewBViewModel(IDialogService dialogService)
     {
         _dialogService = dialogService;
-        Navigate = new DelegateCommand(() => _navigation?.RequestNavigate("ViewA"));
+        Navigate = new DelegateCommand(() => _navigation?.RequestNavigate("ViewA?message=Hello%20from%20View%20B"));
         ShowDialog = new AsyncDelegateCommand(OnShowDialog);
     }
 

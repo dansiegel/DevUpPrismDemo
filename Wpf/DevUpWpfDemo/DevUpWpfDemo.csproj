@@ -7,4 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Prism.DryIoc" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DevUpDemo.ViewModels\DevUpDemo.ViewModels.csproj" />
+  </ItemGroup>
 </Project>
