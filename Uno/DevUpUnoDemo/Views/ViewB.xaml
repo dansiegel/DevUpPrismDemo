@@ -9,8 +9,10 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-  <StackPanel>
-    <TextBlock Text="View B" />
+  <StackPanel HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Spacing="5">
+    <TextBlock Text="View B" HorizontalTextAlignment="Center" />
     <TextBlock Text="{Binding Message}" />
     <Button Content="Go Back to View A"
             Command="{Binding Navigate}" />

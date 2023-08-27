@@ -4,5 +4,5 @@
              xmlns:prism="http://prismlibrary.com"
              x:Class="DevUpMauiDemo.Views.MainPage"
              Title="MainPage">
-  <ContentView prism:RegionManager.RegionName="MainContent" />
+  <ContentView prism:RegionManager.RegionName="ContentRegion" />
 </ContentPage>
