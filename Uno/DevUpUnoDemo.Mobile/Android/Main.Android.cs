@@ -14,11 +14,11 @@ using Microsoft.UI.Xaml.Media;
 namespace DevUpUnoDemo.Droid;
 
 [global::Android.App.ApplicationAttribute(
-    Label = "@string/ApplicationName",
-    Icon = "@mipmap/iconapp",
-    LargeHeap = true,
-    HardwareAccelerated = true,
-    Theme = "@style/AppTheme"
+	Label = "@string/ApplicationName",
+	Icon = "@mipmap/iconapp",
+	LargeHeap = true,
+	HardwareAccelerated = true,
+	Theme = "@style/AppTheme"
 )]
 public class Application : Microsoft.UI.Xaml.NativeApplication
 {

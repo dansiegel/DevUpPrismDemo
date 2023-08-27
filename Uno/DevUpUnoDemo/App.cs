@@ -6,7 +6,11 @@ namespace DevUpUnoDemo;
 
 public class App : PrismApplication
 {
-    protected override UIElement CreateShell() => Container.Resolve<Shell>();
+    protected override UIElement CreateShell()
+    {
+        RegionManager.RegisterViewWithRegion<ViewA>("ContentRegion");
+        return Container.Resolve<Shell>();
+    }
 
     protected override void RegisterTypes(IContainerRegistry containerRegistry)
     {

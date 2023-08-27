@@ -17,11 +17,20 @@ internal static class PrismStartup
                 container.RegisterForRegionNavigation<ViewB, ViewBViewModel>();
 
             })
-            .OnInitialized(container =>
-            {
-                var regionManager = container.Resolve<IRegionManager>();
-                regionManager.RegisterViewWithRegion<ViewA>("MainContent");
-            })
-            .OnAppStart("MainPage");
+            .OnInitialized(OnInitialized)
+            .OnAppStart(OnAppStart);
+    }
+
+    private static void OnInitialized(IContainerProvider container)
+    {
+        var regionManager = container.Resolve<IRegionManager>();
+        regionManager.RegisterViewWithRegion<ViewA>("MainContent");
+    }
+
+    private static async Task OnAppStart(INavigationService navigationService)
+    {
+        await navigationService.CreateBuilder()
+            .AddSegment("MainPage")
+            .NavigateAsync();
     }
 }

@@ -6,7 +6,7 @@
     <!-- Display name -->
     <ApplicationTitle>DevUpUnoDemo</ApplicationTitle>
     <!-- App Identifier -->
-    <ApplicationId>com.companyname.devupunodemo</ApplicationId>
+    <ApplicationId>com.prismlibrary.devupunodemo</ApplicationId>
     <ApplicationIdGuid>F9FE9D78-2EF8-4F4D-B883-73E69658E32D</ApplicationIdGuid>
     <!-- Versions -->
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
