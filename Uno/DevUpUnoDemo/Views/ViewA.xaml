@@ -12,11 +12,15 @@
   <StackPanel HorizontalAlignment="Center"
               VerticalAlignment="Center"
               Spacing="5">
-    <TextBlock Text="View A" HorizontalTextAlignment="Center" />
+    <TextBlock Text="View A"
+               HorizontalTextAlignment="Center" 
+               FontSize="22" />
     <TextBlock Text="{Binding Message}" />
-    <Button Content="Go Back to View A"
-            Command="{Binding Navigate}" />
+    <Button Content="Go to View B"
+            Command="{Binding Navigate}"
+            HorizontalAlignment="Center"/>
     <Button Content="Show Dialog"
-            Command="{Binding ShowDialog}" />
+            Command="{Binding ShowDialog}"
+            HorizontalAlignment="Center" />
   </StackPanel>
 </Page>
