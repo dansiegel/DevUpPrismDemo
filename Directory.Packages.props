@@ -1,13 +1,13 @@
 <Project ToolsVersion="15.0">
   <PropertyGroup>
-    <PrismVersion>9.0.219-pre-g331d34b24b</PrismVersion>
+    <PrismVersion>9.0.222-pre-g04a17da095</PrismVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Prism.Core" Version="$(PrismVersion)" />
-    <PackageVersion Include="Prism.DryIoc.Uno.WinUI" Version="$(PrismVersion)" />
+    <PackageVersion Include="Prism.Core" Version="9.0.238-pre" />
+    <PackageVersion Include="Prism.DryIoc.Uno.WinUI" Version="9.0.238-pre" />
     <PackageVersion Include="Prism.Uno.WinUI" Version="$(PrismVersion)" />
-    <PackageVersion Include="Prism.DryIoc" Version="$(PrismVersion)" />
-    <PackageVersion Include="Prism.DryIoc.Maui" Version="$(PrismVersion)" />
+    <PackageVersion Include="Prism.DryIoc" Version="9.0.238-pre" />
+    <PackageVersion Include="Prism.DryIoc.Maui" Version="9.0.238-pre" />
     <PackageVersion Include="coverlet.collector" Version="3.2.0" />
     <PackageVersion Include="FluentAssertions" Version="6.10.0" />
     <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="8.0.0-preview.7.23375.6" />
